@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardboard Butler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cardboard Butler</h1>
+    <div id="app">
+        <label for="bgg-id">BGG ID:</label>
+        <input id="bgg-id" type="text">
+        
+        <label for="players">Number of Players:</label>
+        <input id="players" type="number" min="1">
+        
+        <label for="api-key">API Key:</label>
+        <input id="api-key">
+
+        <label for="other">Other Requirements:</label>
+        <textarea id="other" ></textarea>
+
+
+
+
+        <button id="submit">Get Recommendations</button>
+    </div>
+<div id="progress-section" style="display: none;">
+  <div class="loader"></div>
+  <p id="progress-message"></p>
+</div>
+
+    <div id="results">
+        <!-- Results will be displayed here -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
